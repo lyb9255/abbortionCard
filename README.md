@@ -4,6 +4,8 @@ https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam/hub/faq-ac
 
 위의 challenge에서 주어진 이미지 파일과 디자인을 참고해서 눈대중으로 클론코딩함.
 
+디자인은 design 파일 내부의 이미지들 참고
+
 
 21/10/10 
 
