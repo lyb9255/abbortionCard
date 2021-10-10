@@ -3,20 +3,22 @@ const answers = document.querySelectorAll('.answer');
 const questions = document.querySelectorAll('.question');
 const questionboxes = document.querySelectorAll('.questionbox');
 
-arrows.forEach((arrow, index) => {
+questionboxes.forEach((questionbox, index) => {
 
-  arrow.addEventListener('click', () => {
+  questionbox.addEventListener('click', () => {
 
-    arrows.forEach((arrow1, index1) => {
-      if (arrow1 !== arrow && arrow1.classList.contains('active') === true) {
-        arrow1.classList.remove('active');
+    questionboxes.forEach((questionbox1, index1) => {
+      if (questionbox1 !== questionbox && questionbox1.classList.contains('active')) {
+        questionbox.classList.remove('active');
         questions[index1].classList.remove('active');
+        arrows[index1].classList.remove('active');
         answers[index1].classList.remove('active');
       }
     });
 
-    arrow.classList.toggle('active');
+    questionbox.classList.toggle('active');
     questions[index].classList.toggle('active');
+    arrows[index].classList.toggle('active');
     answers[index].classList.toggle('active');
 
   });
